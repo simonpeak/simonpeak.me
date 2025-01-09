@@ -11,4 +11,7 @@ export default defineConfig({
   integrations: [mdx(), sitemap()],
   adapter: cloudflare(),
   markdown: { remarkPlugins: [remarkReadingTime] }
+  experimental: {
+    responsiveImages: true,
+  },
 });
