@@ -10,7 +10,7 @@ export default defineConfig({
   site: 'https://example.com',
   integrations: [mdx(), sitemap()],
   adapter: cloudflare(),
-  markdown: { remarkPlugins: [remarkReadingTime] }
+  markdown: { remarkPlugins: [remarkReadingTime] },
   experimental: {
     responsiveImages: true,
   },
