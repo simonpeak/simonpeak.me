@@ -11,6 +11,10 @@ export default defineConfig({
   integrations: [mdx(), sitemap()],
   adapter: cloudflare(),
   markdown: { remarkPlugins: [remarkReadingTime] },
+  image: {
+    // Used for all `<Image />` and `<Picture />` components unless overridden
+    experimentalLayout: 'responsive',
+  },
   experimental: {
     responsiveImages: true,
   },
